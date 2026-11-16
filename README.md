@@ -102,45 +102,15 @@ A macOS and iPadOS application for editing patches for the Roland GR-55 guitar s
 *   **Swift 6.0** with strict concurrency checking
 *   **SwiftUI**
 *   **macOS 26.0+** / **iPadOS 26.0+** (app target deployment currently **26.6**)
-*   **Xcode 16.0+** (file-system synchronized groups)
+*   **Xcode 26.0+** (file-system synchronized groups)
 *   **SwiftData** for local persistence (separate stores for GR-55 and FCB1010)
 *   **Combine** for reactive MIDI → UI updates
 *   **CoreBluetooth** (iPad) for BLE MIDI when Apple’s system browser is unsuitable
 
-## How to Build
-
-1. Clone the repository.
-2. Open `GR55Configurator.xcodeproj` in Xcode.
-3. Build and run (macOS or iPad destination).
-
-## Project Structure
-
-### Main Application (`GR55Configurator/`)
-
-*   **`Components/`**: Reusable SwiftUI views by domain (`Common/`, `Effects/`, `Sources/`). Hardware chassis pieces live under `Views/GR55Components/`.
-
-*   **`Data/`**: JSON parameter definitions, field types, tone databases, and picker metadata.
-
-*   **`Models/`**: Patch/system/library/FCB models; `HardwareView/` state; `HardwareView/Edit/` for `SharedParamCatalog`, `SharedParamAccessors`, `HWEditSession`, menu catalog, and conflict gates.
-
-*   **`Services/`**: Modular SysEx parsers, MIDI manager, library/search/preset loaders, FCB codec/MIDI/persistence, CloudKit sharing (disabled), utilities.
-
-*   **`ContentView.swift`**: Navigation split view for GR-55 and FCB1010 sidebar sections (including Help).
-
-*   **`Views/`**: Patch editor, library, hardware view, settings, help, MIDI experimental, FCB device tabs, Bluetooth MIDI browser (iOS), card-parameter settings.
-
-*   **`ViewModels/`**: Library, MIDI experimental, and FCB configuration view models.
-
-*   **`Protocols/`**: `ConfigurableView`, `ParserProtocol`, and related interfaces.
-
-### Tests
-
-*   `GR55ConfiguratorTests/`: `GR55/` and `FCB1010/` suites in Field / Unit / View / Integration / System groups (`gr###` / `fcb###` prefixes).
-*   `GR55ConfiguratorUITests/`: XCUITest automation (`gr45#` prefix).
 
 ### Documentation (`Docs/`)
 
-*   SysEx docs, address maps, test coverage notes, `HWEditParamConflicts.md` (parameter catalog conflict log).
+*   SysEx docs, address maps.
 
 ## Current Functionality
 
@@ -172,5 +142,6 @@ Enhanced SysEx parser with 7-bit unpacking for general, modeling, PCM, amp/MOD/N
 
 ## GitHub
 
-Repository: https://github.com/CASouthEast/GR55Configurator  
-Owner: CaSouthEast
+Repository: https://github.com/CASouthEast/GR55ConfiguratorReleases
+Issue reporting: github.com/CASouthEast/GR55Configura…rReleases/issues/new/choose
+Public project: https://github.com/users/CASouthEast/projects/2
