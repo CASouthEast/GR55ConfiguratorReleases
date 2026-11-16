@@ -157,6 +157,6 @@ Enhanced SysEx parser with 7-bit unpacking for general, modeling, PCM, amp/MOD/N
 
 Repository: https://github.com/CASouthEast/GR55ConfiguratorReleases
 
-Issue reporting: https://github.com/CASouthEast/GR55Configura…rReleases/issues/new/choose
+Issue reporting: https://github.com/CASouthEast/GR55ConfiguratorReleases/issues/new/choose
 
 Public project: https://github.com/users/CASouthEast/projects/2
