@@ -2,6 +2,11 @@
 
 A macOS and iPadOS application for editing patches for the Roland GR-55 guitar synthesizer, with first-class support for the Behringer FCB1010 MIDI foot controller. The app provides a visual hardware emulation, a card-based patch editor, a hierarchical parameter tree, a local patch library, and SysEx debugging tools.
 
+<p align="center">
+  <img src="Docs/GR55Configurator_Mac_Box.png" alt="GR55Configurator UI" width="750">
+</p>
+
+
 ## Starting the app 1st time...
 **macOS may block this build** (unsigned / not notarized).
 
