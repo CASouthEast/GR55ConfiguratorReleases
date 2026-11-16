@@ -1,0 +1,67 @@
+# --- macOS ---
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# --- Editors / IDEs ---
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+*.xcuserstate
+xcuserdata/
+
+# --- Secrets / local config ---
+.env
+.env.*
+*.pem
+*.p12
+*.key
+github_local.md
+*credentials*
+*token*
+
+# --- Accidental source / build (this repo is releases + docs only) ---
+*.swift
+*.h
+*.m
+*.mm
+*.cpp
+*.c
+*.hpp
+*.xcodeproj/
+*.xcworkspace/
+DerivedData/
+build/
+.Build/
+.build/
+*.dSYM/
+*.ipa
+Package.swift
+Package.resolved
+
+# --- Archives / temp transfer junk ---
+*.zip
+*.tar
+*.tar.gz
+*.7z
+*.rar
+*.tmp
+*.temp
+*.bak
+*.orig
+
+# --- Optional: keep working copies of installers out of git ---
+# Prefer attaching .dmg files to GitHub Releases instead of committing them.
+# Uncomment the next line if you never want .dmg tracked in the tree:
+# *.dmg
