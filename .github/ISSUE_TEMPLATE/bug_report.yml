@@ -1,0 +1,108 @@
+name: Bug Report
+description: Report a bug or unexpected behavior in GR55Configurator
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Issue Classification / Severity
+      description: How severe is this issue?
+      options:
+        - Critical (Crash / Data loss)
+        - Major (Core feature broken / MIDI or Audio failure)
+        - Minor (UI glitch / Workaround available)
+        - Cosmetic / Enhancement
+    validations:
+      required: true
+
+  - type: dropdown
+    id: affected_area
+    attributes:
+      label: Affected Area
+      description: Which part of the app is affected?
+      options:
+        - MIDI / SysEx Communication
+        - Looper Engine / Audio
+        - Patch Editor / Librarian
+        - UI / macOS Integration
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: macos_version
+    attributes:
+      label: macOS Version
+      description: The macOS version and hardware you are using.
+      placeholder: "e.g., macOS 26.2 (Apple Silicon M4)"
+    validations:
+      required: true
+
+  - type: input
+    id: app_version
+    attributes:
+      label: App Version
+      description: The version of GR55Configurator you are running.
+      placeholder: "e.g., 1.0.0"
+    validations:
+      required: true
+
+  - type: input
+    id: app_build_id
+    attributes:
+      label: App Build ID
+      description: The build number shown in About GR55Configurator.
+      placeholder: "e.g., 42 (Found in About GR55Configurator)"
+    validations:
+      required: true
+
+  - type: input
+    id: hardware_setup
+    attributes:
+      label: Hardware / Audio & MIDI Setup
+      description: Connected devices and audio/MIDI interfaces (optional).
+      placeholder: "e.g., GR-55 USB, Zoom U-44, etc."
+    validations:
+      required: false
+
+  - type: textarea
+    id: bug_description
+    attributes:
+      label: Bug Description
+      description: A clear and concise description of the problem.
+      placeholder: Describe what went wrong...
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps_to_reproduce
+    attributes:
+      label: Steps to Reproduce
+      description: Step-by-step instructions to reproduce the issue.
+      placeholder: |
+        1. Go to...
+        2. Click on...
+        3. Observe...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected_vs_actual
+    attributes:
+      label: Expected vs. Actual Behavior
+      description: What did you expect to happen, and what actually happened?
+      placeholder: |
+        Expected: ...
+        Actual: ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs_screenshots
+    attributes:
+      label: Logs / Screenshots
+      description: Error messages, console output, or screenshots that help diagnose the issue (optional).
+      placeholder: Paste logs or describe attached screenshots...
+    validations:
+      required: false
